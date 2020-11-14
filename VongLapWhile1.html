@@ -6,14 +6,13 @@
 </head>
 <body>
 <script>
-    let number=parseFloat(prompt('Nhập số vào'));
-    let total= 1;
-    while (number != 0) {
-        number = parseFloat(prompt('Nhập số vào'));
+    let number = parseFloat(prompt("Nhập số vào để tính tổng các số vừa nhập. Ấn '-1' để kết thúc"));
+    let total= 0;
+    while (number != -1) {
+    number = parseFloat(prompt("Nhập số vào để tính tổng các số vừa nhập. Ấn '-1' để kết thúc"));
         alert('Số vừa nhập vào là ' + number);
         total += number;
-        alert('Tổng của 2 số vừa nhập vào là ' +total);
-    }
+    } alert('Tổng của các số vừa nhập vào là ' + total);
 </script>
 
 </body>
